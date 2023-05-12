@@ -244,7 +244,7 @@ axs[1].scatter(p2_norm[y_predict2 == 2, 0], p2_norm[y_predict2 ==
                c='orange', label='cluster 2')
 axs[1].scatter(cen2[:, 0], cen2[:, 1], s=50, c='black', label='Centroids')
 axs[1].set_title(
-    'Country clusters based on CO2 emissions and GDP par capita(1990)',
+    'Country clusters based on CO2 emissions and GDP par capita(2019)',
     fontweight='bold', fontsize=8)
 axs[1].set_xlabel('CO2 Emissions per head', fontweight='bold')
 axs[1].set_ylabel('GDP per capita', fontweight='bold')
@@ -282,7 +282,7 @@ axs[1].scatter(p2[y_predict2 == 2, 0], p2[y_predict2 == 2, 1],
                s=50, c='orange', label='Cluster 3')
 axs[1].scatter(cent2[:, 0], cent2[:, 1], s=50, c='black', label='Centroids')
 axs[1].set_title(
-    'Country clusters based on CO2 emissions and GDP par capita(1990)',
+    'Country clusters based on CO2 emissions and GDP par capita(2019)',
     fontweight='bold', fontsize=9)
 axs[1].set_xlabel('CO2 Emissions per head', fontweight='bold', fontsize=8)
 axs[1].set_ylabel('GDP per capita', fontweight='bold', fontsize=8)
@@ -365,7 +365,8 @@ print('\n Error Estimates for Luxembourg GDP/Capita:\n', error_lux)
 # Plotting the fit
 plt.style.use('seaborn')
 plt.figure(dpi=600)
-plt.plot(gdp_lux["Year"], gdp_lux['Luxembourg'], label="GDP/Capita")
+plt.plot(gdp_lux["Year"], gdp_lux['Luxembourg'], label="GDP/Capita",
+         c='purple')
 plt.plot(year, forecast_lux, label="Forecast", c='red')
 plt.xlabel("Year", fontweight='bold', fontsize=14)
 plt.ylabel("GDP per Capita (US$)", fontweight='bold', fontsize=14)
@@ -396,7 +397,7 @@ print('\n Error Estimates for Qatar GDP/Capita:\n', error_q)
 # Plotting the fit
 plt.style.use('seaborn')
 plt.figure(dpi=600)
-plt.plot(gdp_q["Year"], gdp_q['Qatar'], label="GDP/Capita")
+plt.plot(gdp_q["Year"], gdp_q['Qatar'], label="GDP/Capita",  c='purple')
 plt.plot(year, forecast_q, label="Forecast", c='red')
 plt.xlabel("Year", fontweight='bold', fontsize=14)
 plt.ylabel("GDP per Capita (US$)", fontweight='bold', fontsize=14)
