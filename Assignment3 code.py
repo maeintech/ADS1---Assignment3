@@ -268,7 +268,7 @@ axs[0].scatter(p1[y_predict1 == 2, 0], p1[y_predict1 == 2, 1],
                s=50, c='orange', label='Cluster 3')
 axs[0].scatter(cent1[:, 0], cent1[:, 1], s=50, c='black', label='Centroids')
 axs[0].set_title(
-    'Country clusters based on CO2 emissions and GDP par capita(1990)',
+    'Country clusters based on CO2 emissions and GDP per capita(1990)',
     fontweight='bold', fontsize=9)
 axs[0].set_xlabel('CO2 Emissions per head', fontweight='bold', fontsize=8)
 axs[0].set_ylabel('GDP per capita', fontweight='bold', fontsize=8)
@@ -282,7 +282,7 @@ axs[1].scatter(p2[y_predict2 == 2, 0], p2[y_predict2 == 2, 1],
                s=50, c='orange', label='Cluster 3')
 axs[1].scatter(cent2[:, 0], cent2[:, 1], s=50, c='black', label='Centroids')
 axs[1].set_title(
-    'Country clusters based on CO2 emissions and GDP par capita(2019)',
+    'Country clusters based on CO2 emissions and GDP per capita(2019)',
     fontweight='bold', fontsize=9)
 axs[1].set_xlabel('CO2 Emissions per head', fontweight='bold', fontsize=8)
 axs[1].set_ylabel('GDP per capita', fontweight='bold', fontsize=8)
